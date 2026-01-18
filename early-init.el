@@ -477,10 +477,14 @@ this stage of initialization."
 (setq package-enable-at-startup nil)  ; Let the init.el file handle this
 (setq use-package-always-ensure t)
 (setq use-package-enable-imenu-support t)
-(setq package-archives '(("melpa"        . "https://melpa.org/packages/")
-                         ("gnu"          . "https://elpa.gnu.org/packages/")
+(setq package-archives '(
+                         ;; ("melpa"        . "https://melpa.org/packages/")
+                         ;; ("gnu"          . "https://elpa.gnu.org/packages/")
                          ("nongnu"       . "https://elpa.nongnu.org/nongnu/")
+                         ("gnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
                          ("melpa-stable" . "https://stable.melpa.org/packages/")))
+
 (setq package-archive-priorities '(("gnu"    . 99)
                                    ("nongnu" . 80)
                                    ("melpa"  . 70)
