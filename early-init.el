@@ -478,11 +478,12 @@ this stage of initialization."
 (setq use-package-always-ensure t)
 (setq use-package-enable-imenu-support t)
 (setq package-archives '(
-                         ;; ("melpa"        . "https://melpa.org/packages/")
-                         ;; ("gnu"          . "https://elpa.gnu.org/packages/")
+                         ("melpa"        . "https://melpa.org/packages/")
+                         ("gnu"          . "https://elpa.gnu.org/packages/")
                          ("nongnu"       . "https://elpa.nongnu.org/nongnu/")
-                         ("gnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+                         ;; ("gnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ;; ("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+                         ;; I blocked .edu.cn in my home, so....
                          ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 (setq package-archive-priorities '(("gnu"    . 99)
